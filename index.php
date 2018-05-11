@@ -2,10 +2,11 @@
 
 require 'vendor/autoload.php';
 
-Flight::route('/', function(){
-  var_dump(App\Config\CONFIG);
-  echo 'hello world!';
-});
+header('x-powered-by: PHP');
+header('Server: Ubuntu');
+
+Flight::route('GET /', array('App\Controllers\Index','index'));
+Flight::route('GET /demo', array('App\Controllers\Demo','hello'));
 
 Flight::start();
 
