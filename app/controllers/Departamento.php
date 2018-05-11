@@ -2,7 +2,7 @@
 
 class Departamento
 {
-  public static function listar ()
+  public static function listar()
   {
     $rs = \Model::factory('App\Models\Departamento', 'ubicaciones')
     	->select('id')

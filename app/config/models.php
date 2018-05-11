@@ -15,4 +15,9 @@ class Distrito extends \Model
 	public static $_table = 'distritos';
 }
 
+class DistritoProvinciaDepartamento extends \Model
+{
+	public static $_table = 'vw_distrito_provincia_departamentos';
+}
+
 ?>

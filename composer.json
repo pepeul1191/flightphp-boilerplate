@@ -20,8 +20,8 @@
           "app/config/database.php"
         ],
         "classmap": [
+          "app/config/models.php",
           "app/controllers/",
-          "app/config/",
           "app/libs/"
         ]
     }
