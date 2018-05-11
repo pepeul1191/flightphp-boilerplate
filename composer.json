@@ -21,6 +21,7 @@
         ],
         "classmap": [
           "app/config/models.php",
+          "app/config/helpers.php",
           "app/controllers/",
           "app/libs/"
         ]

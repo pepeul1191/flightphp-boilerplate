@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 header('x-powered-by: PHP');
 header('Server: Ubuntu');
 
-Flight::set('config', App\Config\Config);
+Flight::set('config', App\Config\Constants);
 Flight::set('flight.views.path', 'app/views');
 Flight::route('GET /', array('App\Controllers\Home','index'));
 Flight::route('GET /demo', array('App\Controllers\Demo','hello'));

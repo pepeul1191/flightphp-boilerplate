@@ -4,7 +4,7 @@ class Distrito
 {
   public static function listar($provincia_id)
   {
-    $rs = \Model::factory('App\Models\Distrito', 'ubicaciones')
+    $rs = \Model::factory('App\Config\Models\Distrito', 'ubicaciones')
     	->select('id')
     	->select('nombre')
       ->where('provincia_id', $provincia_id)
@@ -15,7 +15,7 @@ class Distrito
   public static function buscar()
   {
     $nombre = \Flight::request()->query['nombre'];
-    $rs = \Model::factory('App\Models\DistritoProvinciaDepartamento', 'ubicaciones')
+    $rs = \Model::factory('App\Config\Models\DistritoProvinciaDepartamento', 'ubicaciones')
   		->select('id')
   		->select('nombre')
   		->where_like('nombre', $nombre . '%')
@@ -26,7 +26,7 @@ class Distrito
 
   public static function nombre($distrito_id)
   {
-    $rs = \Model::factory('App\Models\DistritoProvinciaDepartamento', 'ubicaciones')
+    $rs = \Model::factory('App\Config\Models\DistritoProvinciaDepartamento', 'ubicaciones')
 			->select('nombre')
 			->where('id', $distrito_id)
 			->find_one()

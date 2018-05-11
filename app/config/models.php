@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace App\Config\Models;
 
 class Departamento extends \Model
 {
