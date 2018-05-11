@@ -14,9 +14,10 @@
     },
     "autoload": {
         "files": [
-          "app/config/config.php",
           "vendor/j4mie/idiorm/idiorm.php",
-          "vendor/j4mie/paris/paris.php"
+          "vendor/j4mie/paris/paris.php",
+          "app/config/config.php",
+          "app/config/database.php"
         ],
         "classmap": [
           "app/controllers/",
