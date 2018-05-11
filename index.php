@@ -3,7 +3,8 @@
 require 'vendor/autoload.php';
 
 Flight::route('/', function(){
-    echo 'hello world!';
+  var_dump(App\Config\CONFIG);
+  echo 'hello world!';
 });
 
 Flight::start();
