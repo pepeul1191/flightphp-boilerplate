@@ -1,0 +1,13 @@
+{
+    "name": "pepe/flightphp",
+    "description": "FlightPHP Boilerplate",
+    "authors": [
+        {
+            "name": "Pepe Valdivia",
+            "email": "jvaldivia@softweb.pe"
+        }
+    ],
+    "require": {
+        "mikecao/flight": "^1.3"
+    }
+}
