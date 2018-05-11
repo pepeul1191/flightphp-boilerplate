@@ -4,7 +4,10 @@ class Demo
 {
   public static function hello()
   {
-    echo 'hello world!';
+    $valor = 'hola mundo';
+    \Flight::view()->assign('valor', $valor);
+    \Flight::view()->assign('partial', 'demo/index.tpl');
+    \Flight::view()->display('layouts/blank.tpl');
   }
 }
 
