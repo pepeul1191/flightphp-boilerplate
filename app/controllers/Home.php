@@ -1,10 +1,11 @@
 <?php namespace App\Controllers;
 
-class Index
+class Home
 {
   public static function index()
   {
-    echo 'index';
+    var_dump(\Flight::get('config'));
+    echo 'home/index';
   }
 }
 
